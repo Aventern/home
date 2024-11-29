@@ -110,13 +110,101 @@
     </script>
    </div>
    <div>
-<a herf="https://m.twitch.tv/qxuy4/home"　class="button" role="button">くーや_98 Twitch</a> 
+      <script>
+        // ボタンを動的に作成
+        const button = document.createElement('button');
+        button.textContent = 'くーや_98 Twitch98'; // ボタンの名前を設定
+        button.style.padding = '10px 20px'; // スタイルを設定
+        button.style.fontSize = '16px';
+
+        // クリック時の動作を設定
+        button.addEventListener('click', function () {
+            const url = 'https://m.twitch.tv/qxuy4/home'; // 遷移先URL
+            window.open(url, '_blank'); // 新しいタブで開く
+        });
+
+        // ボタンを親要素に追加
+        document.getElementById('buttonContainer').appendChild(button);
+         function getRandomColor() {
+            const letters = '0123456789ABCDEF';
+            let color = '#';
+            for (let i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+
+        // 色を毎秒変更
+        setInterval(() => {
+            const newColor = getRandomColor(); // 新しいランダムな色
+            button.style.backgroundColor = newColor; // ボタンの背景色を変更
+        }, 1000); // 1000ミリ秒（1秒）ごとに変更
+    </script>
    </div>
    <div>
-       <a herf="https://x.com/qxuy4?s=11"　class="button" role="button">Twitter(メイン)</a>
+      <script>
+        // ボタンを動的に作成
+        const button = document.createElement('button');
+        button.textContent = 'Twitter(メイン)'; // ボタンの名前を設定
+        button.style.padding = '10px 20px'; // スタイルを設定
+        button.style.fontSize = '16px';
+
+        // クリック時の動作を設定
+        button.addEventListener('click', function () {
+            const url = 'https://x.com/qxuy4?s=11'; // 遷移先URL
+            window.open(url, '_blank'); // 新しいタブで開く
+        });
+
+        // ボタンを親要素に追加
+        document.getElementById('buttonContainer').appendChild(button);
+         function getRandomColor() {
+            const letters = '0123456789ABCDEF';
+            let color = '#';
+            for (let i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+
+        // 色を毎秒変更
+        setInterval(() => {
+            const newColor = getRandomColor(); // 新しいランダムな色
+            button.style.backgroundColor = newColor; // ボタンの背景色を変更
+        }, 1000); // 1000ミリ秒（1秒）ごとに変更
+    </script>
    </div>
    <div>
       <a herf="https://x.com/kuuyq?s=11"　class="button" role="button">Twitter(サブ)</a>
+      <script>
+        // ボタンを動的に作成
+        const button = document.createElement('button');
+        button.textContent = 'Twitter(サブ)'; // ボタンの名前を設定
+        button.style.padding = '10px 20px'; // スタイルを設定
+        button.style.fontSize = '16px';
+
+        // クリック時の動作を設定
+        button.addEventListener('click', function () {
+            const url = 'https://x.com/kuuyq?s=1'; // 遷移先URL
+            window.open(url, '_blank'); // 新しいタブで開く
+        });
+
+        // ボタンを親要素に追加
+        document.getElementById('buttonContainer').appendChild(button);
+         function getRandomColor() {
+            const letters = '0123456789ABCDEF';
+            let color = '#';
+            for (let i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+
+        // 色を毎秒変更
+        setInterval(() => {
+            const newColor = getRandomColor(); // 新しいランダムな色
+            button.style.backgroundColor = newColor; // ボタンの背景色を変更
+        }, 1000); // 1000ミリ秒（1秒）ごとに変更
+    </script>
    </div>
    <div>
    TEL : 114-514-1919
