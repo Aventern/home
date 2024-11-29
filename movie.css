@@ -1,0 +1,13 @@
+
+.mainColumnMovie{
+background-image: url("movie.png");
+background-repeat: repeat;
+width: 100%;
+background-size: 350px 100px; /* 画像の大きさを固定 */
+background-position: top left;
+}
+   
+.movieBodyList{
+font-weight: bold;
+margin-bottom: 2rem;
+}

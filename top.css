@@ -1,0 +1,63 @@
+.mainColumnTop{
+background-image: url("kani kuyashi.png");
+background-repeat: repeat;
+width: 100%;
+background-size: 350px 100px; /* 画像の大きさを固定 */
+}
+   
+.topBody{
+display: flex;
+justify-content: space-between; /* 子要素の間にスペースを均等に配置 */
+align-items: center; /* 子要素を中央に配置 */
+}
+   
+.topBodyLeft{
+width: 50%;
+}
+   
+.topBodyRight{
+width: 50%;
+}
+   
+.topProfileItem{
+margin-top: 1.5rem;
+margin-bottom: 2rem;
+width: 70%;
+
+}
+   
+.topInfoHeader{
+text-align: center;
+margin-bottom: 4rem;
+}
+   
+.topInfoItem{
+border-top: 0.5px solid #000000;
+font-weight: bold;
+padding: 1rem 0;
+}
+   
+.textEmphasized{
+color: rgb(232, 38, 38);
+}
+   
+.topInfoItemBody{
+margin-left: 4rem;
+}
+
+.topProfileImg{
+    width: 400px; /* 幅を100pxに設定 */
+    height: auto; /* 高さは自動調整 */
+    margin: auto; /* マージンをリセット */
+    padding: 0; /* パディングをリセット */
+    overflow: hidden;
+
+}
+
+body {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* ビューポートの高さを設定 */
+    overflow-x: hidden; /* 横スクロールを隠す */
+}
