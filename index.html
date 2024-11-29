@@ -61,46 +61,6 @@
    <a href="profile.html">
    プロフィール
    </a>
-       <input type="checkbox" id="popup-close">
-    <div class="popup">
-        <label for="popup-close" class="icon-close">×</label>
-        <div class="popup-content">
-            <p>ここに広告</p>
-         <script>  /* チェックリストを非表示 */
-#popup-close{
-    display: none;
-  }
-
-/* popup-closeチェックが押されたときに.popupに追記*/
-#popup-close:checked + .popup{
-    display: none;
-  }
-
-.popup {
-    box-sizing: border-box;
-    box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.7);
-    position: relative;
-    margin: auto;
-    width: 50vw;
-    height: 50vh;
-}
-.popup-content{
-    height: 100%;
-    margin: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-  }
-
-.icon-close {
-    background: #000;
-    color: #fff;
-    font-size: 10px;
-    position: absolute;
-    right: 0;
-}
-           </script>
    </div>
    </div>
    <div class="topProfileItem">
