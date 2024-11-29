@@ -76,6 +76,24 @@
    </div>
    <div>
 <a herf="https://www.youtube.com/channel/UC2fpcSwKT4AnFJzBPkwTT1w"　class="button" role="button">98【くーや】Youtube</a>
+       <div id="buttonContainer"></div>
+
+    <script>
+        // ボタンを動的に作成
+        const button = document.createElement('button');
+        button.textContent = '98【くーや】Youtube'; // ボタンの名前を設定
+        button.style.padding = '10px 20px'; // スタイルを設定
+        button.style.fontSize = '16px';
+
+        // クリック時の動作を設定
+        button.addEventListener('click', function () {
+            const url = 'https://www.youtube.com/channel/UC2fpcSwKT4AnFJzBPkwTT1w'; // 遷移先URL
+            window.open(url, '_blank'); // 新しいタブで開く
+        });
+
+        // ボタンを親要素に追加
+        document.getElementById('buttonContainer').appendChild(button);
+    </script>
    </div>
    <div>
 <a herf="https://m.twitch.tv/qxuy4/home"　class="button" role="button">くーや_98 Twitch</a> 
