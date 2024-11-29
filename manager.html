@@ -8,9 +8,43 @@
 <link rel="stylesheet" href="common.css">
 <link rel="stylesheet" href="sidebar.css">
 <link rel="stylesheet" href="top.css">
+   <style>
+        body {font-family: Arial, sans-serif;margin: 0;padding: 0;background-color: #f4f4f4;justify-content: center; align-items: center; /* コンテンツを垂直中央揃え */width: 100vw; /* ビューポートの幅を使用 */}
+
+        header {background-color: #4CAF50;color: white;padding: 10px 0;text-align: center;height: 150px;box-sizing:border-box;position:relative;}
+        #sliding-title {position: absolute;white-space: nowrap;will-change: transform;z-index: 1; /* タイトルを最前面に表示する */}
+        nav {position: absolute;bottom: 0; /* 下に移動 */width: 100%;}
+        nav ul {list-style-type: none;padding: 0;}
+        nav ul li {display: inline;margin-right: 20px;height:-50px;}
+        nav ul li a {color: white;text-decoration: none;}
+        main {padding: 20px;}
+        footer {background-color: #4CAF50;color: white;text-align: center;padding: 10px 0;position: fixed;width: 100%;bottom: 0;}
+        .content {padding: 20px;width: 80%; /* コンテンツの幅を適切に設定 */max-width800px; /* 最大幅を設定 */}
+        .bio {background-color: white;padding: 20px;border-radius: 8px;box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);}
+    </style>
 </head>
 
 <body>
+    <header id="header">
+        <h1 id="sliding-title">あんちょびのブログ</h1>
+         <script>
+        const title = document.getElementById('sliding-title');
+        const startPosition = window.innerWidth;
+        const endPosition = -title.clientWidth;
+        const duration = 10; // アニメーションの持続時間（秒）
+
+        function animate() {
+            const currentTime = (Date.now() % (duration * 1000)) / 1000;
+            const progress = currentTime / duration;
+            const currentX = startPosition + progress * (endPosition - startPosition);
+            title.style.transform = `translateX(${currentX}px)`;
+            requestAnimationFrame(animate);
+        }
+
+        window.onload = () => {
+            animate();
+        };
+    </script>
 <!-- サイドバー -->
 <div class="sidebar">
 </div>
