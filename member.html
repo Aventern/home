@@ -48,58 +48,131 @@
    <li class="sideLink sideLinkManager"><a href="manager.html">管理者</a></li>
    </ul>
    </div>
+   <style>
+        /* 全体のスタイル */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        /* 見出し */
+        h1 {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        /* メンバー一覧 */
+        .members-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        /* メンバー個別カード */
+        .member-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 250px;
+            text-align: center;
+            padding: 15px;
+        }
+
+        /* アイコン画像 */
+        .member-icon {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+
+        /* 名前スタイル */
+        .member-name {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        /* 属性と特徴リスト */
+        .member-attributes {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .member-attributes li {
+            text-align: left;
+            padding: 5px 0;
+            font-size: 14px;
+        }
+
+        /* ボタンスタイル */
+        .button {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 15px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </header>
 <boby>
-  <!-- サイドバー -->
-<div class="sidebar">
-   <ul>
-   <li class="sideLink sideLinkTop"><a href="index.html">トップ</a></li>
-   <li class="sideLink sideLinkMovie"><a href="movie.html">映画出演</a></li>
-   <li class="sideLink sideLinkDrama"><a href="drama.html">ドラマ出演</a></li>
-   <li class="sideLink sideLinkStage"><a href="stage.html">舞台出演</a></li>
-   <li class="sideLink sideLinkPhotobook"><a href="photobook.html">あうらの写真集</a></li>
-   <li class="sideLink sideLinkBook"><a href="book.html">出版本</a></li>
-   <li class="sideLink sideLinkMember"><a href="member.html">カニclub</a></li>
-   <li class="sideLink sideLinkManager"><a href="manager.html">管理者</a></li>
-   </ul>
-   </div>
-  <!-- メインカラム -->
-<div class="mainColumnRight">
-   <div class="mainColumnTop">
- <h1>GIFのバナーとフラッシュのバナーでは、HTMLに貼り付ける方法が異なります。 まず、GIFのバナーをHTMLに貼り付ける手順は次のとおりです。
+ <h1>メンバー紹介</h1>
 
-テキストエディタ（ウィンドウズに付属のメモ帳（Notepad.exe）など）を起動して、次のコードを入力します。「file_name.gif」の部分は、貼り付けたいGIFファイルのファイル名にします。
-<html>
-<body>
-<img src="file_name.gif" />
-</body>
-</html>
-入力したコードを、任意のファイル名でHTMLファイルとして保存します。またはテキストファイルとして保存したうえで、ファイルの拡張子を「.txt」から「.html」に修正します。
-作成したHTMLファイルとそれに貼り付けたいGIFファイルが異なるフォルダに保存されているときは、同一のフォルダに移動します。
-作成したHTMLファイルをダブルクリックしてブラウザで開き、GIFファイルが貼られていることを確認します。
-フラッシュのバナー（SWFファイル）をHTMLに貼り付ける手順は次のとおりです。（SWFファイルを作成したFLAファイルがあるときは、そのFLAファイルをFLASHで開いて「パブリッシュ」するだけで下記の手順が完了します。FLASHでパブリッシュする方法の解説は省略します。）
+    <div class="members-container">
+        <!-- メンバー1 -->
+        <div class="member-card">
+            <img src="https://via.placeholder.com/100" alt="メンバー1の顔" class="member-icon">
+            <div class="member-name">メンバー1</div>
+            <ul class="member-attributes">
+                <li>属性: リーダー</li>
+                <li>所属: チームA</li>
+                <li>特徴: 冷静沈着で戦略家</li>
+            </ul>
+            <a href="https://example.com" class="button">詳細を見る</a>
+        </div>
 
-テキストエディタ（ウィンドウズに付属のメモ帳（Notepad.exe）など）を起動して、次のコードを入力します。「file_name.swf」の部分（2箇所）は、貼り付けたいSWFファイルのファイル名にします。「WIDTH（幅）」と「HEIGHT（高さ）」の値（各2箇所）は、SWFファイルの幅と高さをピクセルで指定します。
-<!-- saved from url=(0013)about:internet -->
-<html>
-<body>
-<OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
- codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0"
- WIDTH="468" HEIGHT="60" id="" ALIGN="">
- <PARAM NAME=movie VALUE="file_name.swf">
- <PARAM NAME=quality VALUE=high>
- <PARAM NAME=bgcolor VALUE=#FFFFFF>
- <EMBED src="file_name.swf" quality=high bgcolor=#FFFFFF
- WIDTH="468" HEIGHT="60" NAME="" ALIGN=""
- TYPE="application/x-shockwave-flash"
- PLUGINSPAGE="http://www.macromedia.com/go/getflashplayer">
- </EMBED>
-</OBJECT>
-</body>
-</html>
-（注）コードの右端の一部が表示されずに切れてしまっているのでご注意ください。コピーは問題なくできます。
- </h1>
-   </div>
-</div>
- 
+        <!-- メンバー2 -->
+        <div class="member-card">
+            <img src="https://via.placeholder.com/100" alt="メンバー2の顔" class="member-icon">
+            <div class="member-name">メンバー2</div>
+            <ul class="member-attributes">
+                <li>属性: サポート</li>
+                <li>所属: チームB</li>
+                <li>特徴: 優れたコミュニケーションスキル</li>
+            </ul>
+            <a href="https://example.com" class="button">詳細を見る</a>
+        </div>
+
+        <!-- メンバー3 -->
+        <div class="member-card">
+            <img src="https://via.placeholder.com/100" alt="メンバー3の顔" class="member-icon">
+            <div class="member-name">メンバー3</div>
+            <ul class="member-attributes">
+                <li>属性: アタッカー</li>
+                <li>所属: チームC</li>
+                <li>特徴: 迅速な対応力</li>
+            </ul>
+            <a href="https://example.com" class="button">詳細を見る</a>
+        </div>
+    </div>
+
+    
+
 </boby>
+</html>
