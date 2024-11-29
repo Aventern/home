@@ -75,26 +75,19 @@
    所属:
    </div>
    <div>
-      
-      <div id="buttonContainer"></div>
-
+    <div id="buttonContainer1"></div>
     <script>
-       const buttonContainer = document.getElementById('buttonContainer');
-        // ボタンを動的に作成
-        const button = document.createElement('button');
-        button.textContent = '98【くーや】Youtube'; // ボタンの名前を設定
-        button.style.padding = '10px 20px'; // スタイルを設定
-        button.style.fontSize = '16px';
-
-        // クリック時の動作を設定
-        button.addEventListener('click', function () {
-            const url = 'https://www.youtube.com/channel/UC2fpcSwKT4AnFJzBPkwTT1w'; // 遷移先URL
-            window.open(url, '_blank'); // 新しいタブで開く
+        const buttonContainer1 = document.getElementById('buttonContainer1');
+        const button1 = document.createElement('button');
+        button1.textContent = '98【くーや】Youtube';
+        button1.style.padding = '10px 20px';
+        button1.style.fontSize = '16px';
+        button1.addEventListener('click', function () {
+            const url = 'https://www.youtube.com/channel/UC2fpcSwKT4AnFJzBPkwTT1w';
+            window.open(url, '_blank');
         });
-
-        // ボタンを親要素に追加
-        document.getElementById('buttonContainer').appendChild(button);
-         function getRandomColor() {
+        buttonContainer1.appendChild(button1);
+        function getRandomColor() {
             const letters = '0123456789ABCDEF';
             let color = '#';
             for (let i = 0; i < 6; i++) {
@@ -102,119 +95,69 @@
             }
             return color;
         }
-
-        // 色を毎秒変更
         setInterval(() => {
-            const newColor = getRandomColor(); // 新しいランダムな色
-            button.style.backgroundColor = newColor; // ボタンの背景色を変更
-        }, 1000); // 1000ミリ秒（1秒）ごとに変更
+            button1.style.backgroundColor = getRandomColor();
+        }, 1000);
     </script>
-   </div>
-   <div>
-      <div id="buttonContainer"></div>
+</div>
 
-      <script>
-         const buttonContainer = document.getElementById('buttonContainer');
-        // ボタンを動的に作成
-        const button = document.createElement('button');
-        button.textContent = 'くーや_98 Twitch98'; // ボタンの名前を設定
-        button.style.padding = '10px 20px'; // スタイルを設定
-        button.style.fontSize = '16px';
-
-        // クリック時の動作を設定
-        button.addEventListener('click', function () {
-            const url = 'https://m.twitch.tv/qxuy4/home'; // 遷移先URL
-            window.open(url, '_blank'); // 新しいタブで開く
+<div>
+    <div id="buttonContainer2"></div>
+    <script>
+        const buttonContainer2 = document.getElementById('buttonContainer2');
+        const button2 = document.createElement('button');
+        button2.textContent = 'くーや_98 Twitch98';
+        button2.style.padding = '10px 20px';
+        button2.style.fontSize = '16px';
+        button2.addEventListener('click', function () {
+            const url = 'https://m.twitch.tv/qxuy4/home';
+            window.open(url, '_blank');
         });
-
-        // ボタンを親要素に追加
-        document.getElementById('buttonContainer').appendChild(button);
-         function getRandomColor() {
-            const letters = '0123456789ABCDEF';
-            let color = '#';
-            for (let i = 1; i < 6; i++) {
-                color += letters[Math.floor(Math.random() * 16)];
-            }
-            return color;
-        }
-
-        // 色を毎秒変更
+        buttonContainer2.appendChild(button2);
         setInterval(() => {
-            const newColor = getRandomColor(); // 新しいランダムな色
-            button.style.backgroundColor = newColor; // ボタンの背景色を変更
-        }, 1000); // 1000ミリ秒（1秒）ごとに変更
+            button2.style.backgroundColor = getRandomColor();
+        }, 1000);
     </script>
-   </div>
-   <div>
-      <div id="buttonContainer"></div>
+</div>
 
-      <script>
-      const buttonContainer = document.getElementById('buttonContainer');   
-        // ボタンを動的に作成
-        const button = document.createElement('button');
-        button.textContent = 'Twitter(メイン)'; // ボタンの名前を設定
-        button.style.padding = '10px 20px'; // スタイルを設定
-        button.style.fontSize = '16px';
-
-        // クリック時の動作を設定
-        button.addEventListener('click', function () {
-            const url = 'https://x.com/qxuy4?s=11'; // 遷移先URL
-            window.open(url, '_blank'); // 新しいタブで開く
+<div>
+    <div id="buttonContainer3"></div>
+    <script>
+        const buttonContainer3 = document.getElementById('buttonContainer3');
+        const button3 = document.createElement('button');
+        button3.textContent = 'Twitter(メイン)';
+        button3.style.padding = '10px 20px';
+        button3.style.fontSize = '16px';
+        button3.addEventListener('click', function () {
+            const url = 'https://x.com/qxuy4?s=11';
+            window.open(url, '_blank');
         });
-
-        // ボタンを親要素に追加
-        document.getElementById('buttonContainer').appendChild(button);
-         function getRandomColor() {
-            const letters = '0123456789ABCDEF';
-            let color = '#';
-            for (let i = 2; i < 6; i++) {
-                color += letters[Math.floor(Math.random() * 16)];
-            }
-            return color;
-        }
-
-        // 色を毎秒変更
+        buttonContainer3.appendChild(button3);
         setInterval(() => {
-            const newColor = getRandomColor(); // 新しいランダムな色
-            button.style.backgroundColor = newColor; // ボタンの背景色を変更
-        }, 1000); // 1000ミリ秒（1秒）ごとに変更
+            button3.style.backgroundColor = getRandomColor();
+        }, 1000);
     </script>
-   </div>
-   <div>
-      <div id="buttonContainer"></div>
+</div>
 
-      <script>
-         const buttonContainer = document.getElementById('buttonContainer');
-        // ボタンを動的に作成
-        const button = document.createElement('button');
-        button.textContent = 'Twitter(サブ)'; // ボタンの名前を設定
-        button.style.padding = '10px 20px'; // スタイルを設定
-        button.style.fontSize = '16px';
-
-        // クリック時の動作を設定
-        button.addEventListener('click', function () {
-            const url = 'https://x.com/kuuyq?s=1'; // 遷移先URL
-            window.open(url, '_blank'); // 新しいタブで開く
+<div>
+    <div id="buttonContainer4"></div>
+    <script>
+        const buttonContainer4 = document.getElementById('buttonContainer4');
+        const button4 = document.createElement('button');
+        button4.textContent = 'Twitter(サブ)';
+        button4.style.padding = '10px 20px';
+        button4.style.fontSize = '16px';
+        button4.addEventListener('click', function () {
+            const url = 'https://x.com/kuuyq?s=1';
+            window.open(url, '_blank');
         });
-
-        // ボタンを親要素に追加
-        document.getElementById('buttonContainer').appendChild(button);
-         function getRandomColor() {
-            const letters = '0123456789ABCDEF';
-            let color = '#';
-            for (let i = 3; i < 6; i++) {
-                color += letters[Math.floor(Math.random() * 16)];
-            }
-            return color;
-        }
-
-        // 色を毎秒変更
+        buttonContainer4.appendChild(button4);
         setInterval(() => {
-            const newColor = getRandomColor(); // 新しいランダムな色
-            button.style.backgroundColor = newColor; // ボタンの背景色を変更
-        }, 1000); // 1000ミリ秒（1秒）ごとに変更
+            button4.style.backgroundColor = getRandomColor();
+        }, 1000);
     </script>
-   </div>
+</div>
+
    <div>
    TEL : 114-514-1919
    </div>
