@@ -52,4 +52,37 @@
    <li class="sideLink sideLinkManager"><a href="manager.html">管理者</a></li>
    </ul>
    </div>
+ <h1>GIFのバナーとフラッシュのバナーでは、HTMLに貼り付ける方法が異なります。 まず、GIFのバナーをHTMLに貼り付ける手順は次のとおりです。
+
+テキストエディタ（ウィンドウズに付属のメモ帳（Notepad.exe）など）を起動して、次のコードを入力します。「file_name.gif」の部分は、貼り付けたいGIFファイルのファイル名にします。
+<html>
+<body>
+<img src="file_name.gif" />
+</body>
+</html>
+入力したコードを、任意のファイル名でHTMLファイルとして保存します。またはテキストファイルとして保存したうえで、ファイルの拡張子を「.txt」から「.html」に修正します。
+作成したHTMLファイルとそれに貼り付けたいGIFファイルが異なるフォルダに保存されているときは、同一のフォルダに移動します。
+作成したHTMLファイルをダブルクリックしてブラウザで開き、GIFファイルが貼られていることを確認します。
+フラッシュのバナー（SWFファイル）をHTMLに貼り付ける手順は次のとおりです。（SWFファイルを作成したFLAファイルがあるときは、そのFLAファイルをFLASHで開いて「パブリッシュ」するだけで下記の手順が完了します。FLASHでパブリッシュする方法の解説は省略します。）
+
+テキストエディタ（ウィンドウズに付属のメモ帳（Notepad.exe）など）を起動して、次のコードを入力します。「file_name.swf」の部分（2箇所）は、貼り付けたいSWFファイルのファイル名にします。「WIDTH（幅）」と「HEIGHT（高さ）」の値（各2箇所）は、SWFファイルの幅と高さをピクセルで指定します。
+<!-- saved from url=(0013)about:internet -->
+<html>
+<body>
+<OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+ codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0"
+ WIDTH="468" HEIGHT="60" id="" ALIGN="">
+ <PARAM NAME=movie VALUE="file_name.swf">
+ <PARAM NAME=quality VALUE=high>
+ <PARAM NAME=bgcolor VALUE=#FFFFFF>
+ <EMBED src="file_name.swf" quality=high bgcolor=#FFFFFF
+ WIDTH="468" HEIGHT="60" NAME="" ALIGN=""
+ TYPE="application/x-shockwave-flash"
+ PLUGINSPAGE="http://www.macromedia.com/go/getflashplayer">
+ </EMBED>
+</OBJECT>
+</body>
+</html>
+（注）コードの右端の一部が表示されずに切れてしまっているのでご注意ください。コピーは問題なくできます。
+ </h1>
 </boby>
