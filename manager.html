@@ -52,34 +52,6 @@
 <!-- メインカラム -->
 <div class="mainColumnLeft">
 </div>
-
-         <h1 id="sliding-title">あんちょび&やきのり</h1>
- <script>
-        const title = document.getElementById('sliding-title');
-        const startPosition = window.innerWidth;
-        const endPosition = -title.clientWidth;
-        const duration = 10; // アニメーションの持続時間（秒）
-
-        function animate() {
-            const currentTime = (Date.now() % (duration * 1000)) / 1000;
-            const progress = currentTime / duration;
-            const currentX = startPosition + progress * (endPosition - startPosition);
-            title.style.transform = `translateX(${currentX}px)`;
-            requestAnimationFrame(animate);
-        }
-
-        window.onload = () => {
-            animate();
-        };
-    </script>
-        <script>
-        // function to generate a random color
-        function getRandomColor() {const letters = '0123456789ABCDEF';let color = '#';for (let i = 0; i < 6; i++) {color += letters[Math.floor(Math.random() * 16)];}return color;}
-        // function to change the header color
-        function changeHeaderColor() {const header = document.getElementById('header');header.style.backgroundColor = getRandomColor();}
-        // set interval to change color every second
-        setInterval(changeHeaderColor, 10);
-    </script>
 </body>
 
 </html>
@@ -126,31 +98,5 @@
    </div>
    <!-- メインカラム -->
 <div class="mainColumnLeft">
-    <h1 id="sliding-title">あんちょび&やきのり</h1>
- <script>
-        const title = document.getElementById('sliding-title');
-        const startPosition = window.innerWidth;
-        const endPosition = -title.clientWidth;
-        const duration = 10; // アニメーションの持続時間（秒）
-
-        function animate() {
-            const currentTime = (Date.now() % (duration * 1000)) / 1000;
-            const progress = currentTime / duration;
-            const currentX = startPosition + progress * (endPosition - startPosition);
-            title.style.transform = `translateX(${currentX}px)`;
-            requestAnimationFrame(animate);
-        }
-
-        window.onload = () => {
-            animate();
-        };
-    </script>
-        <script>
-        // function to generate a random color
-        function getRandomColor() {const letters = '0123456789ABCDEF';let color = '#';for (let i = 0; i < 6; i++) {color += letters[Math.floor(Math.random() * 16)];}return color;}
-        // function to change the header color
-        function changeHeaderColor() {const header = document.getElementById('header');header.style.backgroundColor = getRandomColor();}
-        // set interval to change color every second
-        setInterval(changeHeaderColor, 10);
-    </script>
+    
 </div>
