@@ -75,8 +75,8 @@
    所属:
    </div>
    <div>
-<a herf="https://www.youtube.com/channel/UC2fpcSwKT4AnFJzBPkwTT1w"　class="button" role="button">98【くーや】Youtube</a>
-       <div id="buttonContainer"></div>
+      
+      <div id="buttonContainer"></div>
 
     <script>
         // ボタンを動的に作成
@@ -93,6 +93,20 @@
 
         // ボタンを親要素に追加
         document.getElementById('buttonContainer').appendChild(button);
+         function getRandomColor() {
+            const letters = '0123456789ABCDEF';
+            let color = '#';
+            for (let i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+
+        // 色を毎秒変更
+        setInterval(() => {
+            const newColor = getRandomColor(); // 新しいランダムな色
+            button.style.backgroundColor = newColor; // ボタンの背景色を変更
+        }, 1000); // 1000ミリ秒（1秒）ごとに変更
     </script>
    </div>
    <div>
