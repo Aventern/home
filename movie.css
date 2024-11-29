@@ -1,6 +1,6 @@
 
 .mainColumnMovie{
-background-image: url("movie.png");
+background-image: url("images/movie.png");
 background-repeat: repeat;
 width: 100%;
 background-size: 350px 100px; /* 画像の大きさを固定 */
