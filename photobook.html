@@ -1,64 +1,43 @@
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
-<meta charset="utf-8">
-<title>98(くーや)のホームページ</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="common.css">
-<link rel="stylesheet" href="sidebar.css">
-<link rel="stylesheet" href="top.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>横並びヘッダー</title>
+    <style>
+        /* ヘッダー全体のスタイル */
+        header {
+            display: flex; /* 横並びにする */
+            justify-content: space-around; /* 項目間を均等に配置 */
+            background-color: #333; /* 背景色 */
+            padding: 10px 0; /* 上下の余白 */
+        }
+
+        /* リンクのスタイル */
+        header a {
+            color: white; /* 文字色を白に */
+            text-decoration: none; /* 下線を消す */
+            padding: 10px 20px; /* 内側の余白 */
+            font-size: 16px; /* 文字サイズ */
+        }
+
+        /* ホバー時のスタイル */
+        header a:hover {
+            background-color: #555; /* 背景色を少し明るく */
+            border-radius: 5px; /* 角を丸く */
+        }
+    </style>
 </head>
-
 <body>
-<!-- サイドバー -->
-<div class="sidebar">
-</div>
-<!-- メインカラム -->
-<div class="mainColumnLeft">
-</div>
+    <header>
+        <a href="index.html">トップ</a>
+        <a href="movie.html">映画出演</a>
+        <a href="drama.html">ドラマ出演</a>
+        <a href="stage.html">舞台出演</a>
+        <a href="photobook.html">写真集</a>
+        <a href="book.html">出版本</a>
+        <a href="member.html">カニclub</a>
+        <a href="manager.html">管理者</a>
+    </header>
 </body>
-
 </html>
-
-<!-- サイドバー -->
-<div class="sidebar">
-   <ul>
-   <li class="sideLink sideLinkTop">
-   <a href="index.html">
-   トップ
-   </a>
-   </li>
-   <li class="sideLink sideLinkMovie">
-   <a href="movie.html">
-   映画出演
-   </a>
-   </li>
-   <li class="sideLink sideLinkDrama">
-   <a href="drama.html">
-   ドラマ出演
-   </a>
-   </li>
-   <li class="sideLink sideLinkStage">
-   <a href="stage.html">
-   舞台出演
-   </a>
-   </li>
-   <li class="sideLink sideLinkPhotobook">
-   <a href="photobook.html">
-   写真集
-   </a>
-   </li>
-   <li class="sideLink sideLinkBook">
-   <a href="book.html">
-   出版本
-   </a>
-   </li>
-   <li class="sideLink sideLinkManager">
-   <a href="manager.html">
-   管理者
-   </a>
-   </li>
-   </ul>
-   </div>
-   <!-- メインカラム -->
