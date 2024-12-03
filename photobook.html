@@ -26,6 +26,17 @@
             background-color: #555; /* 背景色を少し明るく */
             border-radius: 5px; /* 角を丸く */
         }
+
+         @media screen and (max-width: 600px) {
+            header {
+                flex-direction: column; /* 縦並びに変更 */
+                align-items: center; /* 中央揃え */
+            }
+            header a {
+                padding: 15px; /* 余白を広げて押しやすく */
+                font-size: 18px; /* 文字サイズを大きく */
+            }
+        }
     </style>
 </head>
 <body>
