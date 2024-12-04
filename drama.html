@@ -9,6 +9,38 @@
     <link rel="apple-touch-icon" href="images/98top.png">
  
     <style>
+          /* ヘッダー全体のスタイル */
+        header {
+            display: flex; /* 横並びにする */
+            justify-content: space-around; /* 項目間を均等に配置 */
+            background-color: #333; /* 背景色 */
+            padding: 10px 0; /* 上下の余白 */
+        }
+
+        /* リンクのスタイル */
+        header a {
+            color: white; /* 文字色を白に */
+            text-decoration: none; /* 下線を消す */
+            padding: 10px 20px; /* 内側の余白 */
+            font-size: 16px; /* 文字サイズ */
+        }
+
+        /* ホバー時のスタイル */
+        header a:hover {
+            background-color: #555; /* 背景色を少し明るく */
+            border-radius: 5px; /* 角を丸く */
+        }
+
+         @media screen and (max-width: 600px) {
+            header {
+                flex-direction: column; /* 縦並びに変更 */
+                align-items: center; /* 中央揃え */
+            }
+            header a {
+                padding: 15px; /* 余白を広げて押しやすく */
+                font-size: 18px; /* 文字サイズを大きく */
+            }
+        }
         /* 基本のリセット */
         body, ul, li, h1, h2, div, a {
             margin: 0;
