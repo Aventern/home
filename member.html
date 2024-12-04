@@ -10,32 +10,81 @@
 <header>
  <header id="header">
         <h1 id="sliding-title">メンバー紹介</h1>
-         <script>
-        const title = document.getElementById('sliding-title');
-        const startPosition = window.innerWidth;
-        const endPosition = -title.clientWidth;
-        const duration = 10; // アニメーションの持続時間（秒）
-
-        function animate() {
-            const currentTime = (Date.now() % (duration * 1000)) / 1000;
-            const progress = currentTime / duration;
-            const currentX = startPosition + progress * (endPosition - startPosition);
-            title.style.transform = `translateX(${currentX}px)`;
-            requestAnimationFrame(animate);
+         <style>
+         /* ヘッダー全体のスタイル */
+        header {
+            display: flex; /* 横並びにする */
+            justify-content: space-around; /* 項目間を均等に配置 */
+            background-color: #333; /* 背景色 */
+            padding: 10px 0; /* 上下の余白 */
         }
 
-        window.onload = () => {
-            animate();
-        };
-    </script>
-        <script>
-        // function to generate a random color
-        function getRandomColor() {const letters = '0123456789ABCDEF';let color = '#';for (let i = 0; i < 6; i++) {color += letters[Math.floor(Math.random() * 16)];}return color;}
-        // function to change the header color
-        function changeHeaderColor() {const header = document.getElementById('header');header.style.backgroundColor = getRandomColor();}
-        // set interval to change color every second
-        setInterval(changeHeaderColor, 10);
-    </script>
+        /* リンクのスタイル */
+        header a {
+            color: white; /* 文字色を白に */
+            text-decoration: none; /* 下線を消す */
+            padding: 10px 20px; /* 内側の余白 */
+            font-size: 16px; /* 文字サイズ */
+        }
+
+        /* ホバー時のスタイル */
+        header a:hover {
+            background-color: #555; /* 背景色を少し明るく */
+            border-radius: 5px; /* 角を丸く */
+        }
+
+         @media screen and (max-width: 600px) {
+            header {
+                flex-direction: column; /* 縦並びに変更 */
+                align-items: center; /* 中央揃え */
+            }
+            header a {
+                padding: 15px; /* 余白を広げて押しやすく */
+                font-size: 18px; /* 文字サイズを大きく */
+            }
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            padding: 20px;
+        }
+        .video-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .video-item {
+            width: 300px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .video-item img {
+            width: 100%;
+            display: block;
+        }
+        .video-item a {
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+            padding: 10px;
+            display: block;
+            font-weight: bold;
+        }
+        .video-item a:hover {
+            color: #007bff;
+        }
+    </style>
   <header>
         <a href="index.html">トップ</a>
         <a href="movie.html">最新動画一覧</a>
