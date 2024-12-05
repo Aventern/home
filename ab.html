@@ -82,6 +82,100 @@
             color: #007bff;
         }
     </style>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            margin: 0;
+        }
+
+        .avatar-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .avatar-card {
+            width: 300px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+
+        .avatar-card:hover {
+            transform: scale(1.05);
+        }
+
+        .avatar-card .header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .avatar-card .content {
+            padding: 15px;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .avatar-card .content a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .avatar-card .content a:hover {
+            text-decoration: underline;
+        }
+
+        .avatar-card .footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-top: 1px solid #ddd;
+        }
+
+        /* レスポンシブ対応 */
+        @media screen and (max-width: 768px) {
+            .avatar-card {
+                width: calc(100% - 40px); /* スマホ幅で1列表示 */
+                max-width: 600px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .avatar-card .header {
+                font-size: 16px;
+            }
+
+            .avatar-card .content {
+                font-size: 12px;
+            }
+
+            .avatar-card .footer {
+                font-size: 12px;
+            }
+        }
+    </style>
+
+   
 </head>
 
 <body>
@@ -95,28 +189,50 @@
         <a href="member.html">別班(旧動画班)</a>
         <a href="manager.html">管理人</a>
     </header>
-<h1>◇くーや</h1>
-<h2>-Avatar-</h2>
-<h3>・3Dアバター『カルネ / KALNE』 </h3>
-<p>製作者: AugmentedDolls/Puton. 様</p>
-<p>🔗https://booth.pm/ja/items/5142722</p>
-<h3>・かに.jp</h3>
-<p>製作者:ぬるぽぽ 様></p>
-<p>🔗https://booth.pm/ja/items/4482395</p>
+<h1>使用アバター一覧</h1>
+    <div class="avatar-list">
+        <!-- くーや -->
+        <div class="avatar-card">
+            <div class="header">◇ くーや</div>
+            <div class="content">
+                <p><strong>-Avatar-</strong></p>
+                <p>・3Dアバター『カルネ / KALNE』<br>
+                製作者: AugmentedDolls / Puton. 様<br>
+                🔗 <a href="https://booth.pm/ja/items/5142722" target="_blank">リンクを見る</a></p>
 
-◇あうら
--Avatar-
-・オリジナル3Dモデル - アマロ #Amalo3D
-製作者:セナ 様
-ショップ名:©SennaStudio
-🔗https://booth.pm/ja/items/4806925
+                <p>・かに.jp<br>
+                製作者: ぬるぽぽ 様<br>
+                🔗 <a href="https://booth.pm/ja/items/4482395" target="_blank">リンクを見る</a></p>
+            </div>
+            <div class="footer">くーやのアバター</div>
+        </div>
 
-◇Berudayo
--Avatar-
-・【無料オリジナル3Dモデル】かににちゃん
-製作者:onntama 様
-ショップ名:onntama shop
-🔗 https://booth.pm/ja/items/4987980
-   </a>
+        <!-- あうら -->
+        <div class="avatar-card">
+            <div class="header">◇ あうら</div>
+            <div class="content">
+                <p><strong>-Avatar-</strong></p>
+                <p>・オリジナル3Dモデル - アマロ #Amalo3D<br>
+                製作者: セナ 様<br>
+                ショップ名: ©SennaStudio<br>
+                🔗 <a href="https://booth.pm/ja/items/4806925" target="_blank">リンクを見る</a></p>
+            </div>
+            <div class="footer">あうらのアバター</div>
+        </div>
+
+        <!-- Berudayo -->
+        <div class="avatar-card">
+            <div class="header">◇ Berudayo</div>
+            <div class="content">
+                <p><strong>-Avatar-</strong></p>
+                <p>・【無料オリジナル3Dモデル】かににちゃん<br>
+                製作者: onntama 様<br>
+                ショップ名: onntama shop<br>
+                🔗 <a href="https://booth.pm/ja/items/4987980" target="_blank">リンクを見る</a></p>
+            </div>
+            <div class="footer">Berudayoのアバター</div>
+        </div>
+    </div>
+  
 </body>
 </html>
