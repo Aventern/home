@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+<meta charset="utf-8">
+<title>98(くーや)のホームページ</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="icon" href="images/98top.png">
+    <link rel="apple-touch-icon" href="images/98top.png">
+   <style>
+         /* ヘッダー全体のスタイル */
+        header {
+            display: flex; /* 横並びにする */
+            justify-content: space-around; /* 項目間を均等に配置 */
+            background-color: #333; /* 背景色 */
+            padding: 10px 0; /* 上下の余白 */
+        }
+
+        /* リンクのスタイル */
+        header a {
+            color: white; /* 文字色を白に */
+            text-decoration: none; /* 下線を消す */
+            padding: 10px 20px; /* 内側の余白 */
+            font-size: 16px; /* 文字サイズ */
+        }
+
+        /* ホバー時のスタイル */
+        header a:hover {
+            background-color: #555; /* 背景色を少し明るく */
+            border-radius: 5px; /* 角を丸く */
+        }
+
+         @media screen and (max-width: 600px) {
+            header {
+                flex-direction: column; /* 縦並びに変更 */
+                align-items: center; /* 中央揃え */
+            }
+            header a {
+                padding: 15px; /* 余白を広げて押しやすく */
+                font-size: 18px; /* 文字サイズを大きく */
+            }
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            padding: 20px;
+        }
+        .video-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .video-item {
+            width: 300px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .video-item img {
+            width: 100%;
+            display: block;
+        }
+        .video-item a {
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+            padding: 10px;
+            display: block;
+            font-weight: bold;
+        }
+        .video-item a:hover {
+            color: #007bff;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="index.html">トップ</a>
+        <a href="movie.html">最新動画一覧</a>
+        <a href="drama.html">くーやの独り言</a>
+        <a href="stage.html">あうら同好会</a>
+        <a href="photobook.html">あうらの写真集</a>
+        <a href="book.html">提供</a>
+        <a href="member.html">別班(旧動画班)</a>
+        <a href="manager.html">管理人</a>
+    </header>
+</body>
+</html>
