@@ -50,6 +50,112 @@
                 font-size: 18px; /* 文字サイズを大きく */
             }
         }
+        <style>
+        /* ページ全体のスタイル */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            margin: 0;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .gallery-item {
+            width: calc(33.33% - 20px); /* 3列表示、余白を考慮 */
+            max-width: 300px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05); /* マウスホバー時に拡大 */
+        }
+
+        .gallery-item img {
+            width: 100%;
+            display: block;
+        }
+
+        .gallery-item p {
+            margin: 0;
+            padding: 10px;
+            text-align: center;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        /* モーダルウィンドウのスタイル */
+        .modal {
+            display: none; /* 初期状態で非表示 */
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .modal img {
+            max-width: 90%;
+            max-height: 80%;
+            border-radius: 10px;
+        }
+
+        .modal:target {
+            display: flex; /* ターゲット時に表示 */
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 30px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .close-btn:hover {
+            color: red;
+        }
+
+        /* レスポンシブ対応 */
+        @media screen and (max-width: 768px) {
+            .gallery-item {
+                width: calc(50% - 20px); /* 2列表示 */
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .gallery-item {
+                width: 100%; /* 1列表示 */
+                max-width: 100%; /* スマホで幅をフルに */
+            }
+        }
+    </style>
     </style>
 </head>
 <body>
@@ -81,5 +187,49 @@
             photoA.style.opacity = '0'; // 徐々に透明にする
         }, 3000); // 3秒後に実行
     </script>
+
+    
+    <h1>あうらの写真集</h1>
+    <div class="gallery">
+        <!-- 写真1 -->
+        <div class="gallery-item">
+            <a href="#img1">
+                <img src="https://via.placeholder.com/300x200" alt="写真1">
+            </a>
+            <p>写真タイトル1</p>
+        </div>
+
+        <!-- 写真2 -->
+        <div class="gallery-item">
+            <a href="#img2">
+                <img src="https://via.placeholder.com/300x200" alt="写真2">
+            </a>
+            <p>写真タイトル2</p>
+        </div>
+
+        <!-- 写真3 -->
+        <div class="gallery-item">
+            <a href="#img3">
+                <img src="https://via.placeholder.com/300x200" alt="写真3">
+            </a>
+            <p>写真タイトル3</p>
+        </div>
+    </div>
+
+    <!-- モーダルウィンドウ -->
+    <div id="img1" class="modal">
+        <a href="#" class="close-btn">×</a>
+        <img src="https://via.placeholder.com/800x600" alt="写真1">
+    </div>
+
+    <div id="img2" class="modal">
+        <a href="#" class="close-btn">×</a>
+        <img src="https://via.placeholder.com/800x600" alt="写真2">
+    </div>
+
+    <div id="img3" class="modal">
+        <a href="#" class="close-btn">×</a>
+        <img src="https://via.placeholder.com/800x600" alt="写真3">
+    </div>
 </body>
 </html>
