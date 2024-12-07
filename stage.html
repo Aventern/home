@@ -2,44 +2,12 @@
 <html lang="ja">
 
 <head>
-<meta charset="utf-8">
-<title>98(くーや)のホームページ</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="icon" href="images/98top.png">
+    <meta charset="utf-8">
+    <title>あうら同好会</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/98top.png">
     <link rel="apple-touch-icon" href="images/98top.png">
-   <style>
-         /* ヘッダー全体のスタイル */
-        header {
-            display: flex; /* 横並びにする */
-            justify-content: space-around; /* 項目間を均等に配置 */
-            background-color: #333; /* 背景色 */
-            padding: 10px 0; /* 上下の余白 */
-        }
-
-        /* リンクのスタイル */
-        header a {
-            color: white; /* 文字色を白に */
-            text-decoration: none; /* 下線を消す */
-            padding: 10px 20px; /* 内側の余白 */
-            font-size: 16px; /* 文字サイズ */
-        }
-
-        /* ホバー時のスタイル */
-        header a:hover {
-            background-color: #555; /* 背景色を少し明るく */
-            border-radius: 5px; /* 角を丸く */
-        }
-
-         @media screen and (max-width: 600px) {
-            header {
-                flex-direction: column; /* 縦並びに変更 */
-                align-items: center; /* 中央揃え */
-            }
-            header a {
-                padding: 15px; /* 余白を広げて押しやすく */
-                font-size: 18px; /* 文字サイズを大きく */
-            }
-        }
+    <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -47,44 +15,118 @@
             background-color: #f4f4f9;
             color: #333;
         }
-        h1 {
-            text-align: center;
-            padding: 20px;
-        }
-        .video-list {
+
+        header {
             display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-            padding: 20px;
+            justify-content: space-around;
+            background-color: #333;
+            padding: 10px 0;
         }
-        .video-item {
-            width: 300px;
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            overflow: hidden;
-            background-color: #fff;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        .video-item img {
-            width: 100%;
-            display: block;
-        }
-        .video-item a {
+
+        header a {
+            color: white;
             text-decoration: none;
-            color: #333;
+            padding: 10px 20px;
             font-size: 16px;
-            padding: 10px;
-            display: block;
+        }
+
+        header a:hover {
+            background-color: #555;
+            border-radius: 5px;
+        }
+
+        .hero-section {
+            width: 100%;
+            height: 400px;
+            background: url('images/9898.png') no-repeat center center;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            font-size: 36px;
             font-weight: bold;
         }
-        .video-item a:hover {
+
+        .content {
+            padding: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        h1, h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        p {
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        ul li::before {
+            content: '•';
             color: #007bff;
+            margin-right: 8px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        @media screen and (max-width: 768px) {
+            .hero-section {
+                height: 300px;
+                font-size: 28px;
+            }
+
+            header {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            header a {
+                font-size: 14px;
+                padding: 8px 10px;
+            }
+
+            .content {
+                padding: 15px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .hero-section {
+                height: 200px;
+                font-size: 20px;
+            }
         }
     </style>
 </head>
 
 <body>
+    <!-- ヘッダー -->
     <header>
         <a href="index.html">トップ</a>
         <a href="movie.html">最新動画一覧</a>
@@ -95,6 +137,68 @@
         <a href="member.html">別班(旧動画班)</a>
         <a href="manager.html">管理人</a>
     </header>
+
+    <!-- ヒーローセクション -->
+    <div class="hero-section">
+        あうら同好会
+    </div>
+
+    <!-- メインコンテンツ -->
+    <div class="content">
+        <h1>あうら同好会の詳細</h1>
+
+        <h2>目的:</h2>
+        <p>あうらがのびのびと自分らしく活動できる環境を提供すること。周囲から静かに見守り、必要な時にサポートを行う。</p>
+
+        <h2>基本理念:</h2>
+        <ul>
+            <li>あうらの個性や才能を尊重し、無理な期待やプレッシャーをかけない。</li>
+            <li>成長の過程を見守りながら、彼女が自らの目標に向かって進んでいくことを支援する。</li>
+            <li>必要な時にだけサポートし、あくまで自主性を優先する。</li>
+        </ul>
+
+        <h2>活動内容:</h2>
+        <ul>
+            <li><strong>見守り活動:</strong> あうらの活動や成長を観察し、無理をしていないか、ストレスを感じていないかを見守る。</li>
+            <li><strong>サポート活動:</strong> あうらが困難や課題に直面した場合、必要な時にサポートを提供する。</li>
+            <li><strong>情報共有:</strong> あうらの成長や活動の進捗について、同好会内で共有する。</li>
+            <li><strong>イベントの企画:</strong> あうらがリラックスできるようなイベントを企画。</li>
+        </ul>
+
+        <h2>参加資格:</h2>
+        <p>あうらを応援し、彼女の成長を見守る意志がある者。同好会の理念を理解し、過干渉にならないよう配慮できる者。</p>
+
+        <h2>運営方針:</h2>
+        <p>メンバーは自主的に活動し、無理のない範囲で協力します。定期的なミーティングや情報交換を行い、あうらにとって最適なサポート方法を検討します。</p>
+    </div>
+
+    <!-- フッター -->
+    <footer>
+        © 2024 あうら同好会. All rights reserved.
+    </footer>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
