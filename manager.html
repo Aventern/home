@@ -47,7 +47,25 @@
     </header>
 <img src="images/1.png" width="100%" >
 
-    
+    <div>
+    <div id="buttonContainer3"></div>
+    <script>
+        const buttonContainer3 = document.getElementById('buttonContainer3');
+        const button3 = document.createElement('button');
+        button3.textContent = 'あんちょびのTwitter';
+        button3.style.padding = '10px 20px';
+        button3.style.fontSize = '16px';
+        button3.addEventListener('click', function () {
+            const url = 'https://x.com/anchovy_pastan';
+            window.open(url, '_blank');
+        });
+        buttonContainer3.appendChild(button3);
+        setInterval(() => {
+            button3.style.backgroundColor = getRandomColor();
+        }, 1000);
+    </script>
+</div>
+
 </body>
 
 </html>
